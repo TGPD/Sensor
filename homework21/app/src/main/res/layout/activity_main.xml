@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:stretchColumns="0,3"
+    tools:context=".MainActivity" >
+
+    <!--三行，传感器数据显示-->
+    <TableRow android:paddingTop="10dp"
+        tools:ignore="MissingConstraints">
+        <!--文本框组件-->
+        <TextView />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="x轴加速度:"
+            android:textSize="18sp"
+            android:gravity="center_horizontal"/>
+        <!--编辑框组件-->
+        <EditText
+            android:id="@+id/et1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="000"/>
+        <TextView />
+    </TableRow>
+
+    <TableRow tools:ignore="MissingConstraints">
+        <TextView />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="y轴加速度:"
+            android:textSize="18sp"
+            android:gravity="center_horizontal"/>
+
+        <EditText
+            android:id="@+id/et2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="000"/>
+        <TextView />
+    </TableRow>
+
+    <TableRow tools:ignore="MissingConstraints">
+        <TextView />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="z轴加速度:"
+            android:textSize="18sp"
+            android:gravity="center_horizontal"/>
+
+        <EditText
+            android:id="@+id/et3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="000"/>
+        <TextView />
+    </TableRow>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
